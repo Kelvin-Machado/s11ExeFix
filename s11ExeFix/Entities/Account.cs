@@ -34,7 +34,7 @@ namespace s11ExeFix.Entities
         {
             if (amount > WithDrawLimit)
             {
-                throw new DomainException("The amoutn withdraw limit");
+                throw new DomainException("The amount exceeds withdraw limit");
             }
             if (amount > Balance)
             {

@@ -17,7 +17,7 @@ namespace s11ExeFix
             Console.Write("Initial balance: ");
             double balance = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
             Console.Write("Withdraw limit: ");
-            double withdrawLimit = double.Parse(Console.ReadLine());
+            double withdrawLimit = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
             Account acc = new Account(number, holder, balance, withdrawLimit);
 
